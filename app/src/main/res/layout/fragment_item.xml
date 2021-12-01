@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/country_flag"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_flag" />
+
+    <TextView
+        android:id="@+id/country_name_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Country code:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/country_name"
+        app:layout_constraintTop_toBottomOf="@+id/country_name" />
+
+    <TextView
+        android:id="@+id/phone_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone code:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/country_name"
+        app:layout_constraintTop_toTopOf="@+id/country_name_code_text" />
+
+    <TextView
+        android:id="@+id/country_name_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/country_name"
+        app:layout_constraintTop_toBottomOf="@+id/country_name_code_text" />
+
+    <TextView
+        android:id="@+id/phone_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PhoneCode"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/country_name"
+        app:layout_constraintTop_toTopOf="@+id/country_name_code" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
