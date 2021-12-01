@@ -59,7 +59,7 @@ public class CountryFragment extends Fragment {
         viewModel = new ViewModelProvider(this).get(CountryViewModel.class);
 
         viewModel.country.observe(getViewLifecycleOwner(), ccpCountry -> {
-            if (viewModel != null) {
+            if (ccpCountry != null) {
                 binding.countryNameCode.setText(ccpCountry.getNameCode());
                 binding.countryFlag.setImageResource(ccpCountry.getFlagID());
                 binding.countryName.setText(ccpCountry.getName());

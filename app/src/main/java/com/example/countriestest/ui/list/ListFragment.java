@@ -58,7 +58,7 @@ public class ListFragment extends Fragment {
         String nameCode = country.getNameCode();
         if(nameCode != null) {
             Fragment countryFragment = CountryFragment.newInstance(nameCode);
-            FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+            FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
             transaction.replace(R.id.fragment_container, countryFragment);
             transaction.addToBackStack(null);
             transaction.commit();
